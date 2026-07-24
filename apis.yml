@@ -1,22 +1,91 @@
 aid: clara-2
 name: Clara 2
-description: Clara 2 is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Clara is an AI-powered primary care and longevity practice, founded by the
+  team behind Circle Medical and backed by Y Combinator (Spring 2026) and
+  A.Capital. Clara pairs deep clinical AI with board-certified clinician review:
+  it securely imports and analyzes a patient's medical records, surfaces health
+  trends, assists with symptom assessment, medication refills, lab ordering, and
+  longevity/biomarker goals, and routes every medical recommendation to a
+  licensed clinician for review and approval before it reaches the patient. The
+  company operates as a fully licensed primary care practice across all 50 U.S.
+  states and is a HIPAA-covered entity. Clara is a consumer telehealth product
+  (subscription plans on askclara.com) and currently publishes no public
+  developer API, developer portal, or SDKs; this profile captures its public
+  identity, trust, and compliance surface for the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/clara-2/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://askclara.com/og-image.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - y-combinator
-x-tier: stub
-x-tier-reason: portfolio-lead
+- a-capital
+x-tier: profiled
+x-tier-reason: portfolio-lead-enriched
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Healthcare
+- Primary Care
+- Telemedicine
+- Telehealth
+- Artificial Intelligence
+- Longevity
+- Digital Health
+- HIPAA
+- Y Combinator
 apis: []
+common:
+- type: DomainSecurity
+  url: security/clara-2-domain-security.yml
+- type: Website
+  url: https://askclara.com
+- type: About
+  url: https://askclara.com/team
+- type: Blog
+  url: https://askclara.com/blog
+- type: HelpCenter
+  url: https://help.askclara.com
+- type: Support
+  url: https://help.askclara.com
+- type: Pricing
+  url: https://askclara.com/pricing
+- type: SignUp
+  url: https://app.askclara.com/signup
+- type: Login
+  url: https://app.askclara.com/login
+- type: Careers
+  url: https://www.workatastartup.com/companies/clara-2
+- type: TermsOfService
+  url: https://askclara.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://askclara.com/privacy-policy
+- type: TrustCenter
+  url: https://trust.askclara.com
+- type: Compliance
+  url: security/clara-2-trust-center.yml
+- type: X
+  url: https://x.com/askclarahealth
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

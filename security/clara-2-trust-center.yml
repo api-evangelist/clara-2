@@ -1,0 +1,43 @@
+aid: clara-2-trust-center
+name: Clara — Trust Center & Compliance
+type: TrustCenter
+generated: '2026-07-18'
+method: searched
+source: >-
+  https://trust.askclara.com (live), https://askclara.com/notice-of-privacy-practices,
+  https://askclara.com/privacy-policy
+description: >-
+  Clara operates a public Trust Center and, as a fully licensed U.S. primary
+  care practice, is a HIPAA-covered entity. Clara publishes a HIPAA Notice of
+  Privacy Practices and a privacy policy. No third-party security certification
+  (SOC 2 / ISO 27001 / PCI / FedRAMP) is publicly named on the Trust Center
+  landing page at the time of probe; the Trust Center is a JS-rendered portal
+  and may host gated documents behind request/NDA.
+trust_center:
+  url: https://trust.askclara.com
+  status: 200
+  title: Clara Health Trust Center
+  gated: true
+compliance:
+- framework: HIPAA
+  status: covered-entity
+  evidence: >-
+    Notice of Privacy Practices states "We are required by law to maintain the
+    privacy and security of your PHI" and identifies "Clara Health Medical
+    Services P.A." as operating under a HIPAA Organized Health Care Arrangement
+    with covered-entity affiliates.
+  source: https://askclara.com/notice-of-privacy-practices
+- framework: HSA/FSA eligibility
+  status: published
+  evidence: All subscription plans marked HSA/FSA eligible on the pricing page.
+  source: https://askclara.com/pricing
+certifications: []
+contacts:
+- purpose: privacy
+  email: privacy@askclara.com
+- purpose: support
+  email: support@askclara.com
+notes: >-
+  No named SOC 2 / ISO 27001 / PCI / FedRAMP attestation is visible without
+  requesting access through the Trust Center portal. certifications[] left empty
+  rather than fabricated; revisit if Clara publishes named attestations.
